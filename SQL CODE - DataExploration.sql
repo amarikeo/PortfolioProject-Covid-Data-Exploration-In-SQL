@@ -9,7 +9,7 @@ Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, 
 -- Continent can not be NULL, will return continent values for location.
 
 SELECT location, date, total_cases, new_cases, total_deaths, population
-FROM pfcovid..coviddeaths$
+FROM pfcovid..coviddeaths$ 
 WHERE continent IS NOT NULL
 ORDER BY 1,2
 ;
